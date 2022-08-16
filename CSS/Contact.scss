@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    cursor: default;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:  'Poppins';
+    background: #333;
+}
+
+.grey {
+    color: #808080;
+}
+
+nav {
+    background: #f2f2f2;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+label.logo {
+    line-height: 100px;
+    padding: 0 100px;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.nav-links {
+    float: right;
+    margin-right: 20px;
+}
+
+#dork {
+    display: none;
+    height: 40px;
+    width: 40px;
+    background-color: #e91;
+    margin: 0 20px 20px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #333;
+    transition: all 0.5s ease; 
+}
+
+.nav-links li {
+    display: inline-block;
+    line-height: 70px;
+    margin: 0 5px;
+}
+
+.nav-links li a {
+    color: #333;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+    transition: all 0.5s ease;
+}
+
+.nav-links li a:hover {
+    background-color: #808080;
+}
+
+.toggle-button {
+    position: fixed;
+    top: 1.4rem;
+    right: 1rem;
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: #333;
+}
+
+
+.contact {
+    text-transform: uppercase;
+    background-color: rgba(51, 51, 51, 0.521);
+    text-align: center;
+    width: 80%;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.contact-text {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    letter-spacing: 5px;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+.contact-text h2 {
+    margin-left: 28rem;
+    margin: 50px;
+}
+
+.contact-text p {
+    color: #f2f2f2;
+}
+
+.phone {
+    margin-top: 30px;
+}
+
+.contact-me{
+	width: 100%;
+	height: 200px;
+	background: #e91;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+    text-transform: capitalize;
+    padding: 1rem;
+}
+.contact-me p{
+    width: 80%;
+    text-align: center;
+	color: #101010;
+	font-family: 'Poppins';
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+.contact-me .button-two{
+	background-color:#808080;
+	color: #f2f2f2;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 13px 30px;
+	border-radius: 30px;
+	transition: .4s; 
+	font-family: 'Poppins';
+}
+.contact-me .button-two:hover{
+	background-color: #333;
+	border: 2px solid #808080;
+	cursor: pointer;
+}
+
+.footer {
+    background-color: #f2f2f2;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 100%;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row img {
+    padding: 5rem 2rem;
+}
+
+.footer-col {
+    width: 22%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #333;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+    cursor: default;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li  {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #333;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #333;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li:hover {
+    color: #808080;
+    padding-left: 10px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #808080;
+    margin: 0 20px 20px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #333;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #808080;
+    background-color: #333;
+    transform: scale(1.3);
+}
+
+.container p {
+    text-align: center;
+    color: #808080;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+.go-to-top {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #808080;
+    bottom: 20px;
+    right: 30px;
+    display: flex;
+    text-decoration: none;
+    border-radius: 50%;
+    align-items: center;
+    pointer-events: none;
+    opacity: 0;
+    justify-content: center;
+    color: #333;
+    font-size: 22px;
+    transition: all 0.5s;
+}
+
+.go-to-top.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.go-to-top:hover {
+    background: #333;
+    color: #f2f2f2;
+}
+
+@media (max-width: 1080px) {
+    label.logo {
+        padding: 40px;
+    }
+
+    .nav-links li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 800px) {
+    .toggle-button {
+        display: block;
+    }
+
+    .toggle-button.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .toggle-button.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .toggle-button.active .bar:nth-child(3) {
+       transform: translateY(-8px) rotate(-45deg);
+    }
+
+    #dork {
+        display: inline-block;
+    }
+
+    .nav-links {
+        position: fixed;
+        width: 100%;
+        height: 300px;
+        background: #f2f2f2;
+        top: 70px;
+        left: -1000px;   
+        transition: .5s;
+        z-index: 10;
+        padding: 20px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .nav-links::before {
+        content: '';
+        position: absolute;
+        bottom: -5%;
+        width: 100%;
+        height: 5%;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: -1;
+        filter: blur(10px);
+    }
+
+    .nav-links li {
+        display: block;
+        text-align: left;
+    }
+
+    .nav-links li a {
+        font-size: 20px;
+        color: #333;
+    }
+
+    .nav-links li a:hover {
+        background: none;
+        color: #e91;
+        padding-left: 4px;
+    }
+
+    .nav-links.active {
+        transform: translatex(1000px);
+    }
+
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 720px) {
+    .footer-col {
+        width: 100%;
+    }
+
+    .footer {
+        align-items: center;
+    }
+}
+

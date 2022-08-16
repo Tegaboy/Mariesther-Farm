@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pork</title>
+    <link rel="stylesheet" href="css/Pork.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <nav class="nav">
+        <label class="logo"><img src="images/pig.png" alt=""></label>
+        <div class="nav-links">
+            <UL>
+                <i class="fa-solid fa-xmark-large"></i>
+                <LI><a href="Index.html"><i id= "dork" class="fa-solid fa-house-chimney"></i>  Home</a></LI>
+                <LI><a href="Pork.html"><i id= "dork" class="fa-solid fa-bell-concierge"></i> pork</a></LI>
+                <LI><a href="Contact.html"><i id="dork" class="fa-solid fa-phone-volume"></i> Contact us</a></LI>
+            </ul>
+        </div>
+            
+        <div class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    
+    <section class="cuts-section">
+        <div class="cuts">
+            <div class="cuts-description">
+                <h1>fresh pork</h1>
+
+                <p>Whether you are looking for something to cook your dinner with,
+                    or you are planning on hosting a dinner party or barbeque, 
+                    we have all the tender, moist and delicious Pork that you might need.
+                </p> 
+
+                <h2>portion cuts</h2>
+
+                <p>Indeed, <a href="Index.html" class="grey">mariesther farm</a> offers several portion cuts, 
+                    among which we have the pork rib, pork ham, pork belly and variation of these.
+                </p>
+            </div>
+
+            <div class="cuts-container">
+                <div class="card">
+                    <div class="card-img cut-1"></div>
+                    <h2>pork belly</h2>
+                </div>
+                <div class="card">
+                    <div class="card-img cut-2"></div>
+                    <h2>pork ham</h2>
+                </div>
+                <div class="card">
+                    <div class="card-img cut-3"></div>
+                    <h2>pork rib</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="contact-me">
+        <p>to request forn an order.</p>
+        <a class="button-two" href="https://wa.link/wnqiqr">click here</a>
+    </div>
+
+    <section class="the footer">
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div>
+                        <img src="images/pig-2.png" alt="logo">
+                    </div>
+                <div class="footer-col">
+                    <h4>MARIESTERFARM</h4>
+                    <ul>
+                        <li><a href="Index.html">Home</a></li>
+                        <li><a href="Pork.html">pork</a></li>
+                        <li><a href="Contact.html">Contact us</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-col">
+                    <h4>adress</h4>
+                    <ul>
+                        <li>E54, oke-aro,</li>
+                        <li>agege, lagos,</li>
+                        <li>nigeria.</li>
+                    </ul>
+                </div>
+    
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.link/wnqiqr"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+                    <p class="nt-0">copyright &copy; <a href="mailto: johnokandejio@gmail.com" class="grey" >OrTega <sup>&reg;</sup> </a> </p>
+            </div>
+        </div>
+    </section>
+
+    <a href="#top" class="go-to-top"><i class="fa-solid fa-chevron-up"></i></a>
+
+    <script>
+        const totop = document.querySelector(".go-to-top")
+        const togglebutton = document.getElementsByClassName('toggle-button')[0]
+        const navlinks = document.getElementsByClassName('nav-links')[0]
+
+        window.addEventListener("scroll", () =>{
+            if (window.pageYOffset > 100) {
+                totop.classList.add('active');
+            } else {
+                totop.classList.remove('active');
+            }
+        })
+
+        togglebutton.addEventListener('click', () => {
+            navlinks.classList.toggle('active')
+            togglebutton.classList.toggle('active')
+        })
+
+        document.querySelectorAll('.nav-links').forEach(n => n.
+        addEventListener("click" , () => {
+            togglebutton.classList.remove("active")
+            navlinks.classList.remove("active")
+        }))
+    </script>
+</body>
+</html>

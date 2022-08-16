@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARIESTERFARM - PORK AT ITS FINEST</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <nav class="nav">
+        <label class="logo"><img src="images/pig.png" alt=""></label>
+        <div class="nav-links">
+            <UL>
+                <i class="fa-solid fa-xmark-large"></i>
+                <LI><a href="Index.html"><i id= "dork" class="fa-solid fa-house-chimney"></i>  Home</a></LI>
+                <LI><a href="Pork.html"><i id= "dork" class="fa-solid fa-bell-concierge"></i> pork</a></LI>
+                <LI><a href="Contact.html"><i id="dork" class="fa-solid fa-phone-volume"></i> Contact us</a></LI>
+            </ul>
+        </div>
+            
+        <div class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <section class="hero-div">
+        <div class="hero">
+            <div class="hero-items">
+                <img src="images/herobg.jpg" alt="">
+                <div class="hero-items-text">
+                    <h1 class="headding">mariesther farm</h1>
+                    <p>A full service, lagos based pork vendor
+                        ready to deliver our pork to you. get in touch today.
+                    </p>
+                    <a class="button" href="https://wa.link/wnqiqr">Contact us</a>
+                </div>
+            </div>  
+        </div>
+    </section>
+
+    <section class="how we work">
+        <div class="content">
+            <h2 class="header">how we work</h2>
+            <div class="column"> 
+                <div class="section-1">
+                    <i class="fa-solid fa-boxes-packing"></i>
+                    <h3>order</h3>
+                    <p>you select your desired cut and then place an order.</p>
+                </div>
+
+                <div class="section-2">
+                    <i class="fa-solid fa-box"></i>
+                    <h3>package</h3>
+                    <p>we receive your order, prepare and package it for delivery to you.</p>
+                </div>
+
+                <div class="section-3">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <h3>delivery</h3>
+                    <p>then your order will be deliverd to you as quickly as possible.</p>
+                </div>
+            </div>
+         </div>
+    </section>
+
+    <section class="why-chose-us">
+        <div class="wcu-bg">
+            <div class="chose-us">
+                <div class="chose-us-text">
+                    <h2>why choose us</h2>
+                    <h3>naturaly breed pigs</h3>
+                    <p>here at mariesther we provide for you only the best pork
+                         provided from our pigs grown in best conditions. you 
+                         can be rest asured that what we serve is the best quality possible. </p>
+                    <br>
+                    <br>
+                    <h3> 100% whole pork</h3>
+                    <p>we're committed to high animal welfare, and animal well-being.
+                         We&#39;re proud to say that all of our porks are 100% vegetables-fed and finished.
+                         That means that they&#39;ve been raised without 
+                         any animal byproducts, such as animal proteins, animal fats or animal by-products.</p>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div>
+                    <img src="images/pig-2.png" alt="logo">
+                </div>
+               <div class="footer-col">
+                   <h4>MARIESTERFARM</h4>
+                   <ul>
+                       <li><a href="Index.html">Home</a></li>
+                       <li><a href="Pork.html">Pork</a></li>
+                       <li><a href="Contact.html">Contact us</a></li>
+                   </ul>
+               </div>
+
+               <div class="footer-col">
+                   <h4>adress</h4>
+                   <ul>
+                       <li>E54, oke-aro,</li>
+                       <li>agege, lagos,</li>
+                       <li>nigeria.</li>
+                   </ul>
+               </div>
+
+               <div class="footer-col">
+                   <h4>follow us</h4>
+                   <div class="social-links">
+                       <a href="#"><i class="fab fa-facebook-f"></i></a>
+                       <a href="https://wa.link/wnqiqr"><i class="fab fa-whatsapp"></i></a>
+                       <a href="#"><i class="fab fa-instagram"></i></a>
+                   </div>
+               </div>
+           </div>
+           <p class="nt-0">copyright &copy; <a href="mailto: johnokandejio@gmail.com" class="grey" >OrTega <sup>&reg;</sup> </a> </p>
+       </div>
+    </div>
+
+    <a href="#top" class="go-to-top"><i class="fa-solid fa-chevron-up"></i></a>
+
+
+    <script>
+        const totop = document.querySelector(".go-to-top")
+        const togglebutton = document.getElementsByClassName('toggle-button')[0]
+        const navlinks = document.getElementsByClassName('nav-links')[0]
+
+        window.addEventListener("scroll", () =>{
+            if (window.pageYOffset > 100) {
+                totop.classList.add('active');
+            } else {
+                totop.classList.remove('active');
+            }
+        })
+
+        togglebutton.addEventListener('click', () => {
+            navlinks.classList.toggle('active')
+            togglebutton.classList.toggle('active')
+        })
+
+        document.querySelectorAll('.nav-links').forEach(n => n.
+        addEventListener("click" , () => {
+            togglebutton.classList.remove("active")
+            navlinks.classList.remove("active")
+        }))
+    </script>
+
+</body>
+</html>

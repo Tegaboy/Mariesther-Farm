@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Mariestherfarm</title>
+    <link rel="stylesheet" href="css/Contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <nav class="nav">
+        <label class="logo"><img src="images/pig.png" alt=""></label>
+        <div class="nav-links">
+            <UL>
+                <i class="fa-solid fa-xmark-large"></i>
+                <LI><a href="Index.html"><i id= "dork" class="fa-solid fa-house-chimney"></i>  Home</a></LI>
+                <LI><a href="Pork.html"><i id= "dork" class="fa-solid fa-bell-concierge"></i> pork</a></LI>
+                <LI><a href="Contact.html"><i id="dork" class="fa-solid fa-phone-volume"></i> Contact us</a></LI>
+            </ul>
+        </div>
+            
+        <div class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <div class="body">
+        <section class="contact-adress">
+            <div class="contact">
+                <div class="contact-text">
+                    <div class="adress">
+                        <h2>mariesther farm</h2>
+                        <p>E54, oke-aro,</p>
+                        <p>agege, lagos,</p>
+                        <p>nigeria</p>
+                    </div>
+
+                    <div class="phone">
+                        <p>telephone : <em>08056022992</em>,</p>
+                        <p><em>07032174638</em></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="contact-me">
+            <p>having any problem ?, send us an email.</p>
+            <a class="button-two" href="https://formsubmit.co/el/cufosa">let's talk</a>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div>
+                        <img src="images/pig-2.png" alt="logo">
+                    </div>
+                   <div class="footer-col">
+                       <h4>MARIESTERFARM</h4>
+                       <ul>
+                           <li><a href="Index.html">Home</a></li>
+                           <li><a href="Pork.html">Pork</a></li>
+                           <li><a href="Contact.html">Contact us</a></li>
+                       </ul>
+                   </div>
+    
+                   <div class="footer-col">
+                       <h4>adress</h4>
+                       <ul>
+                        <li>E54, oke-aro,</li>
+                        <li>agege, lagos,</li>
+                        <li>nigeria.</li>
+                       </ul>
+                   </div>
+    
+                   <div class="footer-col">
+                       <h4>follow us</h4>
+                       <div class="social-links">
+                           <a href="#"><i class="fab fa-facebook-f"></i></a>
+                           <a href="https://wa.link/wnqiqr"><i class="fab fa-whatsapp"></i></a>
+                           <a href="#"><i class="fab fa-instagram"></i></a>
+                       </div>
+                   </div>
+               </div>
+               <p class="nt-0">copyright &copy; <a href="mailto: johnokandejio@gmail.com" class="grey" >OrTega <sup>&reg;</sup> </a> </p>
+           </div>
+        </div>
+
+        <a href="#top" class="go-to-top"><i class="fa-solid fa-chevron-up"></i></a>
+    </div>
+
+    <script>
+        const totop = document.querySelector(".go-to-top")
+        const togglebutton = document.getElementsByClassName('toggle-button')[0]
+        const navlinks = document.getElementsByClassName('nav-links')[0]
+
+
+        window.addEventListener("scroll", () =>{
+            if (window.pageYOffset > 100) {
+                totop.classList.add('active');
+            } else {
+                totop.classList.remove('active');
+            }
+        })
+       
+        togglebutton.addEventListener('click', () => {
+            navlinks.classList.toggle('active')
+            togglebutton.classList.toggle('active')
+        })
+
+        document.querySelectorAll('.nav-links').forEach(n => n.
+        addEventListener("click" , () => {
+            togglebutton.classList.remove("active")
+            navlinks.classList.remove("active")
+        }))
+    </script>
+</body>
+</html>
